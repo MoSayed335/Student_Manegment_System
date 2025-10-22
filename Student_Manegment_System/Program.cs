@@ -165,7 +165,7 @@
         }
     }
 
-    class Program
+   internal class Program
     {
         static void Main(string[] args)
         {
@@ -286,8 +286,8 @@
             }
             Console.ForegroundColor = ConsoleColor.Yellow;
             var student = new Student(id, name, age);
-            if (manager.AddStudent(student)) Console.WriteLine("Student added successfully.\n");
-            else Console.WriteLine("Add failed — maybe a student with the same ID already exists.\n");
+            if (manager.AddStudent(student)) Console.WriteLine("Student added successfully. ");
+            else Console.WriteLine("Add failed — maybe a student with the same ID already exists.");
             Console.ResetColor();
         }
 
